@@ -21,11 +21,11 @@
 golem::fill_desc(
   pkg_name = "datachecker", # The Name of the package containing the App
   pkg_title = "Data Checker", # The Title of the package containing the App
-  pkg_description = "PKG_DESC.", # The Description of the package containing the App
-  author_first_name = "AUTHOR_FIRST", # Your First Name
-  author_last_name = "AUTHOR_LAST", # Your Last Name
-  author_email = "AUTHOR@MAIL.COM", # Your Email
-  repo_url = NULL # The URL of the GitHub Repo (optional)
+  pkg_description = "Checks feature-types, missingness and outliers and creates a pipeline to process data.", # The Description of the package containing the App
+  author_first_name = "Adam", # Your First Name
+  author_last_name = "Waring", # Your Last Name
+  author_email = "adamwaring@hotmail.co.uk", # Your Email
+  repo_url = "https://github.com/adamwaring/datachecker" # The URL of the GitHub Repo (optional)
 )
 
 ## Set {golem} options ----
@@ -33,14 +33,14 @@ golem::set_golem_options()
 
 ## Create Common Files ----
 ## See ?usethis for more information
-usethis::use_mit_license( "Golem User" )  # You can set another license here
+usethis::use_mit_license( "Adam Waring" )  # You can set another license here
 usethis::use_readme_rmd( open = FALSE )
 usethis::use_code_of_conduct()
 usethis::use_lifecycle_badge( "Experimental" )
 usethis::use_news_md( open = FALSE )
 
 ## Use git ----
-usethis::use_git()
+# usethis::use_git()
 
 ## Init Testing Infrastructure ----
 ## Create a template for tests
@@ -51,8 +51,8 @@ golem::use_recommended_deps()
 
 ## Favicon ----
 # If you want to change the favicon (default is golem's one)
-golem::use_favicon() # path = "path/to/ico". Can be an online file.
-golem::remove_favicon()
+#golem::use_favicon() # path = "path/to/ico". Can be an online file.
+#golem::remove_favicon()
 
 ## Add helper functions ----
 golem::use_utils_ui()

@@ -1,0 +1,15 @@
+1. make a drop down for datasets in datasets.txt
+
+2. make a data summariser module
+
+3. make missingness summaries
+
+4. outliers
+
+5. column renames
+
+6. pull scripts for 7730 re feature type checking
+
+7. make a script to pull all changes into a pipeline
+
+

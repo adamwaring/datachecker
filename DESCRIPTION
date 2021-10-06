@@ -1,19 +1,35 @@
 Package: datachecker
-Title: An Amazing Shiny App
+Title: Data Checker
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "firstname",
-           family = "lastname",
-           role = c("aut", "cre"),
-           email = "your@email.com")
-Description: What the package does (one paragraph).
-License: What license is it under?
+Authors@R: person('Adam', 'Waring', email = 'adamwaring@hotmail.co.uk', role = c('cre', 'aut'))
+Description: Checks feature-types, missingness and outliers and creates a pipeline to process data.
+License: MIT + file LICENSE
 Imports: 
+    attempt,
+    autoEDA,
     config (>= 0.3.1),
+    cowplot,
+    dplyr,
+    DT,
+    finalfit,
+    ggplot2,
+    ggstatsplot,
+    glue,
     golem (>= 0.3.1),
+    htmltools,
+    magrittr,
+    PerformanceAnalytics,
+    processx,
     shiny (>= 1.7.0)
+Remotes:
+    XanderHorn/autoEDA
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 URL: https://github.com/adamwaring/datachecker
 BugReports: https://github.com/adamwaring/datachecker/issues
+Suggests: 
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
